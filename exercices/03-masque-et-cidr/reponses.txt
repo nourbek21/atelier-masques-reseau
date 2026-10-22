@@ -1,0 +1,30 @@
+# Exercice 3 — Le masque : binaire et notation CIDR
+# Écris chaque réponse après le signe =, puis enregistre (Ctrl+S)
+# et lance dans le terminal :  python3 verifier.py 3
+
+# 255.255.255.0 en CIDR
+Q1 = 
+
+# 255.255.0.0 en CIDR
+Q2 = 
+
+# /8 en masque décimal
+Q3 = 
+
+# 255.255.255.128 en CIDR
+Q4 = 
+
+# /20 en masque décimal
+Q5 = 
+
+# /22 en masque décimal
+Q6 = 
+
+# /26 en masque décimal
+Q7 = 
+
+# Nombre de bits hôtes d'un /20
+Q8 = 
+
+# 255.255.0.255 est-il un masque valide ? (oui/non)
+Q9 = 

@@ -1,0 +1,19 @@
+{
+  "name": "Atelier masques réseau",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "customizations": {
+    "codespaces": {
+      "openFiles": ["README.md"]
+    },
+    "vscode": {
+      "settings": {
+        "workbench.editorAssociations": {
+          "*.md": "vscode.markdown.preview.editor"
+        },
+        "git.enableSmartCommit": true,
+        "git.confirmSync": false,
+        "files.autoSave": "afterDelay"
+      }
+    }
+  }
+}

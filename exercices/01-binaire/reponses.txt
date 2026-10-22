@@ -1,0 +1,30 @@
+# Exercice 1 — Du décimal au binaire (un octet)
+# Écris chaque réponse après le signe =, puis enregistre (Ctrl+S)
+# et lance dans le terminal :  python3 verifier.py 1
+
+# 128 en binaire
+Q1 = 
+
+# 192 en binaire
+Q2 = 
+
+# 255 en binaire
+Q3 = 
+
+# 10 en binaire
+Q4 = 
+
+# 168 en binaire
+Q5 = 
+
+# 11110000 en décimal
+Q6 = 
+
+# 00110000 en décimal
+Q7 = 
+
+# 11111100 en décimal
+Q8 = 
+
+# 01100100 en décimal
+Q9 = 

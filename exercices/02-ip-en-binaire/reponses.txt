@@ -1,0 +1,15 @@
+# Exercice 2 — Une adresse IP en binaire
+# Écris chaque réponse après le signe =, puis enregistre (Ctrl+S)
+# et lance dans le terminal :  python3 verifier.py 2
+
+# 10.0.0.1 en binaire
+Q1 = 
+
+# 172.16.5.200 en binaire
+Q2 = 
+
+# 11000000.10101000.00000001.00001010 en décimal
+Q3 = 
+
+# 01111111.00000000.00000000.00000001 en décimal
+Q4 = 

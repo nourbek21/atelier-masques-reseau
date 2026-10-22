@@ -1,0 +1,12 @@
+# Exercice 0 — Prise en main
+# Écris chaque réponse après le signe =, puis enregistre (Ctrl+S)
+# et lance dans le terminal :  python3 verifier.py 0
+
+# Nombre de bits dans une adresse IPv4
+Q1 = 
+
+# Nombre de bits dans un octet
+Q2 = 
+
+# Nombre d'octets dans une adresse IPv4
+Q3 = 

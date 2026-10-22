@@ -1,0 +1,27 @@
+# Exercice 4 — L'opération AND (ET logique)
+# Écris chaque réponse après le signe =, puis enregistre (Ctrl+S)
+# et lance dans le terminal :  python3 verifier.py 4
+
+# 1 AND 0
+Q1 = 
+
+# 1 AND 1
+Q2 = 
+
+# 11001100 AND 11110000
+Q3 = 
+
+# 00110010 AND 11110000
+Q4 = 
+
+# 50 AND 255
+Q5 = 
+
+# 50 AND 0
+Q6 = 
+
+# 200 AND 192
+Q7 = 
+
+# 77 AND 240
+Q8 = 

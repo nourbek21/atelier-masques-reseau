@@ -1,0 +1,19 @@
+# Exercice 9 — Bonus : observer un vrai réseau
+# Tape d'abord dans le terminal :  ip -br -4 addr
+# Écris chaque réponse après le signe =, enregistre (Ctrl+S)
+# puis lance :  python3 verifier.py 9
+
+# Adresse IP de eth0 (sans le /), exemple : 10.0.4.120
+Q1 = 
+
+# CIDR de eth0, exemple : /16
+Q2 = 
+
+# Masque en décimal pointé
+Q3 = 
+
+# Adresse réseau
+Q4 = 
+
+# Nombre d'hôtes utilisables
+Q5 = 

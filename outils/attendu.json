@@ -1,0 +1,552 @@
+{
+ "titres": {
+  "0": "Prise en main",
+  "1": "Du décimal au binaire (un octet)",
+  "2": "Une adresse IP en binaire",
+  "3": "Le masque : binaire et notation CIDR",
+  "4": "L'opération AND (ET logique)",
+  "5": "Trouver l'adresse réseau",
+  "6": "Même réseau ? Direct ou passerelle ?",
+  "7": "Combien de machines ?",
+  "8": "Défi : la carte d'identité d'un réseau",
+  "9": "Bonus : observer un vrai réseau",
+  "10": "Bonus : programmer son calculateur"
+ },
+ "exercices": {
+  "0": {
+   "dossier": "00-prise-en-main",
+   "questions": [
+    {
+     "id": "Q1",
+     "type": "int",
+     "label": "Nombre de bits dans une adresse IPv4",
+     "hash": "7e4a2cb6de0e67debaf7252418dacba903702a3cec93399ec76fe9d68e4ab60a",
+     "indice": "Relis la partie 1 du cours : 4 octets de 8 bits."
+    },
+    {
+     "id": "Q2",
+     "type": "int",
+     "label": "Nombre de bits dans un octet",
+     "hash": "263362ffb045dda767490ef65fff127e962892f22059ea845c5946ef02422a34",
+     "indice": "Le mot « octet » contient « oct » comme… octopus (8 bras) !"
+    },
+    {
+     "id": "Q3",
+     "type": "int",
+     "label": "Nombre d'octets dans une adresse IPv4",
+     "hash": "f54ff07e892a0a13e56b55b641eb978f60fb95d1d105109bd2ee6d2d7c790f02",
+     "indice": "Compte les nombres séparés par des points dans 192.168.50.50."
+    }
+   ]
+  },
+  "1": {
+   "dossier": "01-binaire",
+   "questions": [
+    {
+     "id": "Q1",
+     "type": "bin8",
+     "label": "128 en binaire",
+     "hash": "19182a10c2de250e701f6c598750e066aae6ef07e6de5e16312b4c2e9117fbaf",
+     "indice": "Utilise le tableau des poids 128 64 32 16 8 4 2 1 : coche les poids dont la somme donne le nombre."
+    },
+    {
+     "id": "Q2",
+     "type": "bin8",
+     "label": "192 en binaire",
+     "hash": "2b495f6e2cd7ff9b2a71b3a11f2c2046535f8e8ef8cf1b9c5eb5ec07dab530c3",
+     "indice": "Utilise le tableau des poids 128 64 32 16 8 4 2 1 : coche les poids dont la somme donne le nombre."
+    },
+    {
+     "id": "Q3",
+     "type": "bin8",
+     "label": "255 en binaire",
+     "hash": "80b8d9967b812d603b983121993fff17747d71886bd2bf20ae9233e57b7ae74e",
+     "indice": "255 = 128+64+32+16+8+4+2+1 : tous les poids sont utilisés."
+    },
+    {
+     "id": "Q4",
+     "type": "bin8",
+     "label": "10 en binaire",
+     "hash": "73c4990b40c999483619b1b1a2e170d82ac545e3c4bc7eae01c2de51dff496b4",
+     "indice": "10 = 8 + 2. N'oublie pas les 0 devant pour avoir 8 bits."
+    },
+    {
+     "id": "Q5",
+     "type": "bin8",
+     "label": "168 en binaire",
+     "hash": "413907af74b8e057ed830ccf0068a9ac4a73cb36d75758c3a136d0c11cfe41df",
+     "indice": "168 = 128 + 32 + 8."
+    },
+    {
+     "id": "Q6",
+     "type": "int",
+     "label": "11110000 en décimal",
+     "hash": "c9ecbdef02383bfb1ceecdfdcb752a9cbc06a419bdaa07271451651a72853507",
+     "indice": "Additionne les poids (128 64 32 16 8 4 2 1) des positions où il y a un 1."
+    },
+    {
+     "id": "Q7",
+     "type": "int",
+     "label": "00110000 en décimal",
+     "hash": "5d2bbad824cc74b2f5022168d4d92b111d937e345188899200af83b98936aece",
+     "indice": "Additionne les poids (128 64 32 16 8 4 2 1) des positions où il y a un 1."
+    },
+    {
+     "id": "Q8",
+     "type": "int",
+     "label": "11111100 en décimal",
+     "hash": "ae7ce518dda2019eda1a77c2890d643b4a3b98d12b6b99918d3d33107173a92f",
+     "indice": "Additionne les poids (128 64 32 16 8 4 2 1) des positions où il y a un 1."
+    },
+    {
+     "id": "Q9",
+     "type": "int",
+     "label": "01100100 en décimal",
+     "hash": "84a02f62e4facef491ddfee6a88cbbf3e1504d2d90304c19f9ae3955194d26cc",
+     "indice": "Additionne les poids (128 64 32 16 8 4 2 1) des positions où il y a un 1."
+    }
+   ]
+  },
+  "2": {
+   "dossier": "02-ip-en-binaire",
+   "questions": [
+    {
+     "id": "Q1",
+     "type": "bin32",
+     "label": "10.0.0.1 en binaire",
+     "hash": "e4210e9719ffa9d03dc6604c9695efc59a9a15c706ef9d8d99e10f8d21fc49ca",
+     "indice": "Convertis chaque octet séparément, 8 bits chacun, séparés par des points."
+    },
+    {
+     "id": "Q2",
+     "type": "bin32",
+     "label": "172.16.5.200 en binaire",
+     "hash": "f7317751a2df87bd2a6e8c6f969d0245e1a283a090ef43285a0a58637eddf685",
+     "indice": "172 = 128+32+8+4 ; 200 = 128+64+8. Chaque octet doit faire 8 bits."
+    },
+    {
+     "id": "Q3",
+     "type": "ip",
+     "label": "11000000.10101000.00000001.00001010 en décimal",
+     "hash": "edc8815c9c12740123e6368001f79fd1f5b0ecb101ef23d31ebcf05ccbc5a24a",
+     "indice": "Convertis chaque groupe de 8 bits séparément."
+    },
+    {
+     "id": "Q4",
+     "type": "ip",
+     "label": "01111111.00000000.00000000.00000001 en décimal",
+     "hash": "2277833c248e5dec7b10c96a283b6ab8824420e223177dcfc5962ec4c14b0d56",
+     "indice": "01111111 = 64+32+16+8+4+2+1."
+    }
+   ]
+  },
+  "3": {
+   "dossier": "03-masque-et-cidr",
+   "questions": [
+    {
+     "id": "Q1",
+     "type": "cidr",
+     "label": "255.255.255.0 en CIDR",
+     "hash": "8eb0abb95fbae7561d5041a02fcc1d1232b03ba75a1e56375b32985b9f9c8ec1",
+     "indice": "Compte les bits à 1 : chaque 255 vaut 8 bits à 1."
+    },
+    {
+     "id": "Q2",
+     "type": "cidr",
+     "label": "255.255.0.0 en CIDR",
+     "hash": "6000d34756f942ef9bed9c915fd88cd499402cec6958050ea389814117f76006",
+     "indice": "Compte les bits à 1 : chaque 255 vaut 8 bits à 1."
+    },
+    {
+     "id": "Q3",
+     "type": "ip",
+     "label": "/8 en masque décimal",
+     "hash": "8eab00256d713f1827e349a7b21dee81770f12e08e6be0d8aba5af9938da9553",
+     "indice": "8 bits à 1, puis que des 0."
+    },
+    {
+     "id": "Q4",
+     "type": "cidr",
+     "label": "255.255.255.128 en CIDR",
+     "hash": "2bf23c714a97f5cdfb7fd2312be71e625d87a7e7975815d7dfb3df4d57f884a8",
+     "indice": "128 = 10000000 : un seul bit à 1 dans ce dernier octet."
+    },
+    {
+     "id": "Q5",
+     "type": "ip",
+     "label": "/20 en masque décimal",
+     "hash": "f22f49be02ed38b2c539a243ae01b55dd022e37dcb55be4fb5df291b5d7ac3e3",
+     "indice": "20 = 8 + 8 + 4 : deux octets à 255, puis 4 bits à 1 (11110000 = ?)."
+    },
+    {
+     "id": "Q6",
+     "type": "ip",
+     "label": "/22 en masque décimal",
+     "hash": "79849561e2c27031c5b6237f0e465d0aeabdc62fbcdccac25b185da894c611c4",
+     "indice": "22 = 8 + 8 + 6 : le 3e octet contient 6 bits à 1."
+    },
+    {
+     "id": "Q7",
+     "type": "ip",
+     "label": "/26 en masque décimal",
+     "hash": "854e19b4ceb31c10834a14b2f62e59c4983e77452a1f20243cfbf574a5c94d18",
+     "indice": "26 = 8 + 8 + 8 + 2 : le 4e octet contient 2 bits à 1."
+    },
+    {
+     "id": "Q8",
+     "type": "int",
+     "label": "Nombre de bits hôtes d'un /20",
+     "hash": "43405b62ef8747e2ad62be3a237613fd1426ff0579e459efb0e90d1f7c60c90e",
+     "indice": "Bits hôtes = 32 − nombre de bits réseau."
+    },
+    {
+     "id": "Q9",
+     "type": "ouinon",
+     "label": "255.255.0.255 est-il un masque valide ? (oui/non)",
+     "hash": "ccbbf644c697fd6f996ed38dd49d393cf87416d1598a797f1a9579fa57f25255",
+     "indice": "Dans un masque, tous les 1 sont à gauche et tous les 0 à droite, sans mélange."
+    }
+   ]
+  },
+  "4": {
+   "dossier": "04-operation-and",
+   "questions": [
+    {
+     "id": "Q1",
+     "type": "int",
+     "label": "1 AND 0",
+     "hash": "fcd3a9fa142f3b93f2bcaa3e80e87e4ff49dae3562fc2e8ba6f5044e5fe75f07",
+     "indice": "Pour obtenir 1, il faut que les DEUX bits soient à 1."
+    },
+    {
+     "id": "Q2",
+     "type": "int",
+     "label": "1 AND 1",
+     "hash": "4484f17c45294d2ea52572e9f16686cc91fed51cff1e60a94b30d50203244e7a",
+     "indice": "Pour obtenir 1, il faut que les DEUX bits soient à 1."
+    },
+    {
+     "id": "Q3",
+     "type": "bin8",
+     "label": "11001100 AND 11110000",
+     "hash": "2d9ca4b57ed131301a915ec3f2363827cb2edcb15748adf5bc3bad3239012e8b",
+     "indice": "Rappel : 1 AND 1 = 1, tout le reste donne 0. Aligne les bits et traite-les colonne par colonne."
+    },
+    {
+     "id": "Q4",
+     "type": "bin8",
+     "label": "00110010 AND 11110000",
+     "hash": "32b94d3577dc36ce0c9d064ebffd9c23584811275f33aad952ecd3069e6cf63b",
+     "indice": "Rappel : 1 AND 1 = 1, tout le reste donne 0. Aligne les bits et traite-les colonne par colonne."
+    },
+    {
+     "id": "Q5",
+     "type": "int",
+     "label": "50 AND 255",
+     "hash": "d6a7509d018b038690fa6ebf20b0ccb75ca3dd4661e9261732e805d39722a6c5",
+     "indice": "255 = 11111111 : que se passe-t-il quand on fait AND avec que des 1 ?"
+    },
+    {
+     "id": "Q6",
+     "type": "int",
+     "label": "50 AND 0",
+     "hash": "3a8f077c12b076baf102c28db33d294bfad26dcc3764aba0b62794a3f3860079",
+     "indice": "0 = 00000000 : que se passe-t-il quand on fait AND avec que des 0 ?"
+    },
+    {
+     "id": "Q7",
+     "type": "int",
+     "label": "200 AND 192",
+     "hash": "70e039f7588366b2ffb4be9d74f3383a7c92c00759ea45c471a20aae3047b83f",
+     "indice": "Passe par le binaire : 200 = 11001000, 192 = 11000000."
+    },
+    {
+     "id": "Q8",
+     "type": "int",
+     "label": "77 AND 240",
+     "hash": "a3f6deeb2b7977c5730f2ab90e7a12a40b75a842f5e8fec6627772819ad32c26",
+     "indice": "Passe par le binaire : 77 = 01001101, 240 = 11110000."
+    }
+   ]
+  },
+  "5": {
+   "dossier": "05-adresse-reseau",
+   "questions": [
+    {
+     "id": "Q1",
+     "type": "ip",
+     "label": "Réseau de 192.168.10.37/24",
+     "hash": "108918c8ed13fca99059ad1e1f3e8ac0a01f31e2b61830261f6bee7009f836ca",
+     "indice": "Octet du masque à 255 → on recopie ; à 0 → on écrit 0 ; sinon → AND en binaire sur cet octet."
+    },
+    {
+     "id": "Q2",
+     "type": "ip",
+     "label": "Réseau de 172.16.45.12/16",
+     "hash": "d5b43e761c3798096623ccd247dedff95e9fbe6fc097831563bf03f6e6e6bc77",
+     "indice": "Octet du masque à 255 → on recopie ; à 0 → on écrit 0 ; sinon → AND en binaire sur cet octet."
+    },
+    {
+     "id": "Q3",
+     "type": "ip",
+     "label": "Réseau de 10.20.30.40/8",
+     "hash": "51cb452603f389878f44cd4049b6a337aca7b559cb8b72ace1d1dd9a583ea89e",
+     "indice": "Octet du masque à 255 → on recopie ; à 0 → on écrit 0 ; sinon → AND en binaire sur cet octet."
+    },
+    {
+     "id": "Q4",
+     "type": "ip",
+     "label": "Réseau de 192.168.50.50/20",
+     "hash": "e447c375030d9e442dd1939633387387e630416b40b7ef995e5081849ef1f224",
+     "indice": "C'est l'exemple de la partie 10 du cours ! Le 3e octet du masque vaut 240."
+    },
+    {
+     "id": "Q5",
+     "type": "ip",
+     "label": "Réseau de 192.168.77.130/20",
+     "hash": "d9aa227a6561ddb1f60e4ee2497c9df27a86f47c2cc9bb98520793b14286af7c",
+     "indice": "Masque 255.255.240.0 : fais 77 AND 240 en binaire (tu l'as fait à l'exercice 4 !)."
+    },
+    {
+     "id": "Q6",
+     "type": "ip",
+     "label": "Réseau de 10.1.203.5/22",
+     "hash": "6f99567b8ac0b74910a13881dfb3a72e424fcc4baaf717c453418845355e0841",
+     "indice": "Masque 255.255.252.0 : fais 203 AND 252 en binaire (203 = 11001011)."
+    },
+    {
+     "id": "Q7",
+     "type": "ip",
+     "label": "Réseau de 192.168.1.200/25",
+     "hash": "198dc10dbb00da2fac83e0d72506e04611ddec6015f09815db826b2e670d441b",
+     "indice": "Masque 255.255.255.128 : fais 200 AND 128 sur le dernier octet."
+    }
+   ]
+  },
+  "6": {
+   "dossier": "06-meme-reseau",
+   "questions": [
+    {
+     "id": "Q1",
+     "type": "ouinon",
+     "label": "192.168.1.10 et 192.168.1.250 en /24",
+     "hash": "dddead19073d4a4c86f2407598752bcc2a16d0e76baab06b3986bdcb28ac0076",
+     "indice": "Calcule l'adresse réseau de chacune, puis compare."
+    },
+    {
+     "id": "Q2",
+     "type": "ouinon",
+     "label": "192.168.1.10 et 192.168.2.10 en /24",
+     "hash": "14f27ce6f1035ac9cc4fd6c7af3521230287c2b968d151445d946c55c56a5c24",
+     "indice": "Calcule l'adresse réseau de chacune, puis compare."
+    },
+    {
+     "id": "Q3",
+     "type": "ouinon",
+     "label": "192.168.1.10 et 192.168.2.10 en /16",
+     "hash": "3be0ad9b4ca54885f380a97e27d7caf1f63a5b649ed96acb588f613241745479",
+     "indice": "Mêmes adresses qu'à Q2, mais le masque a changé ! Seuls les 2 premiers octets comptent."
+    },
+    {
+     "id": "Q4",
+     "type": "ouinon",
+     "label": "192.168.50.10 et 192.168.60.20 en /20",
+     "hash": "974f98f1d7745b59581e58983f47feda9df4b90eeae3026a3e7a0d59a6bc133c",
+     "indice": "Fais 50 AND 240 et 60 AND 240, puis compare."
+    },
+    {
+     "id": "Q5",
+     "type": "ouinon",
+     "label": "192.168.50.10 et 192.168.70.1 en /20",
+     "hash": "da19cf3263adda564b4765b56238100a09704350123ea0578a5bfabb519e3e0c",
+     "indice": "Fais 50 AND 240 et 70 AND 240, puis compare."
+    },
+    {
+     "id": "Q6",
+     "type": "route",
+     "label": "10.0.5.20/22 envoie à 10.0.7.200 (direct/passerelle)",
+     "hash": "656e8fa25bfec741ca9988d68bea19481c9420d0afb2477363d2acd08a44156b",
+     "indice": "Masque /22 = 255.255.252.0 : fais 5 AND 252 et 7 AND 252."
+    },
+    {
+     "id": "Q7",
+     "type": "route",
+     "label": "10.0.5.20/22 envoie à 10.0.8.1 (direct/passerelle)",
+     "hash": "6c39f390a9493262fb74bbb215c3fd51ab53c294631c0af2aafba830c58f1f4a",
+     "indice": "Masque /22 = 255.255.252.0 : fais 5 AND 252 et 8 AND 252."
+    }
+   ]
+  },
+  "7": {
+   "dossier": "07-nombre-de-machines",
+   "questions": [
+    {
+     "id": "Q1",
+     "type": "int",
+     "label": "Nombre d'adresses dans un /24",
+     "hash": "435a0d9ac0203f9aee06c7a906873d3658023b6d9d0f09b3df75e6693868d86e",
+     "indice": "Bits hôtes = 32 − 24. Nombre d'adresses = 2 puissance (bits hôtes)."
+    },
+    {
+     "id": "Q2",
+     "type": "int",
+     "label": "Nombre d'hôtes utilisables dans un /24",
+     "hash": "df8ba553760092972c40108d3a4452034449c59846391cd07bb92b77a40330a9",
+     "indice": "On retire 2 adresses : l'adresse réseau et le broadcast."
+    },
+    {
+     "id": "Q3",
+     "type": "int",
+     "label": "Nombre d'hôtes utilisables dans un /22",
+     "hash": "c8feefc52652c82d7991eba685b4b541c5fc0cee4a4e8bde76342cee52890989",
+     "indice": "32 − 22 = 10 bits hôtes. 2^10 = ? Puis retire 2."
+    },
+    {
+     "id": "Q4",
+     "type": "int",
+     "label": "Nombre d'hôtes utilisables dans un /26",
+     "hash": "60f83bd45d4db10c9d26384e9686341fb6c77b80a5f147957656e1d94f816453",
+     "indice": "32 − 26 = 6 bits hôtes. 2^6 = ? Puis retire 2."
+    },
+    {
+     "id": "Q5",
+     "type": "int",
+     "label": "Nombre d'hôtes utilisables dans un /30",
+     "hash": "1ca9469f974e7bf00a9ea674a0329d885bda33879c529643cf466ebbe9a332f9",
+     "indice": "32 − 30 = 2 bits hôtes. 2^2 = ? Puis retire 2."
+    },
+    {
+     "id": "Q6",
+     "type": "cidr",
+     "label": "Plus petit réseau pour 300 machines (CIDR)",
+     "hash": "2eab106daca49e5058c893519eddc0f425eb70894a2741dfb48362c014b89858",
+     "indice": "Exemple du cours, partie 8 : quel masque donne au moins 300 hôtes ?"
+    },
+    {
+     "id": "Q7",
+     "type": "cidr",
+     "label": "Plus petit réseau pour 50 machines (CIDR)",
+     "hash": "9a3fae686e7a0a8f2586f414c961d067818777bfdd6629bfbf15b84427635de4",
+     "indice": "Cherche la plus petite puissance de 2 qui, moins 2, est ≥ 50."
+    },
+    {
+     "id": "Q8",
+     "type": "cidr",
+     "label": "Plus petit réseau pour 1000 machines (CIDR)",
+     "hash": "de8a67bcee49733701d76d5e395837ec327c72937fe5e6594d2b82afe0949095",
+     "indice": "Cherche la plus petite puissance de 2 qui, moins 2, est ≥ 1000."
+    }
+   ]
+  },
+  "8": {
+   "dossier": "08-defi-carte-reseau",
+   "questions": [
+    {
+     "id": "A1",
+     "type": "ip",
+     "label": "Réseau A (192.168.1.75/24) : adresse réseau",
+     "hash": "e46157b8911c131dc77ebe9e1d8b8847b6705649c2df60c1113faf51262c25bc",
+     "indice": "Octet du masque à 255 → on recopie ; à 0 → on écrit 0 ; sinon → AND en binaire sur cet octet."
+    },
+    {
+     "id": "A2",
+     "type": "ip",
+     "label": "Réseau A (192.168.1.75/24) : premier hôte",
+     "hash": "77cfcaf101163bd73070e649016459bb9d6ef45977ac96f2909a942bcfe57936",
+     "indice": "Premier hôte = adresse réseau + 1."
+    },
+    {
+     "id": "A3",
+     "type": "ip",
+     "label": "Réseau A (192.168.1.75/24) : broadcast",
+     "hash": "3d7fd452cfd5320b1d966bddae0c7501c753abf605729e31e2733947d27820ad",
+     "indice": "Broadcast = tous les bits hôtes à 1. C'est l'adresse juste avant le réseau suivant."
+    },
+    {
+     "id": "A4",
+     "type": "ip",
+     "label": "Réseau A (192.168.1.75/24) : dernier hôte",
+     "hash": "0dba0da5ecabca54b92cf1b27735f0df1a146905404a0cda643a8e97f66a0b80",
+     "indice": "Dernier hôte = broadcast − 1."
+    },
+    {
+     "id": "A5",
+     "type": "int",
+     "label": "Réseau A (192.168.1.75/24) : nombre d'hôtes utilisables",
+     "hash": "dca67b4812300bd0886d275b8e63ea90263cf02ec1e8f69ba4a253ebca50b6ff",
+     "indice": "2^(32 − CIDR) − 2."
+    },
+    {
+     "id": "B1",
+     "type": "ip",
+     "label": "Réseau B (192.168.10.100/26) : adresse réseau",
+     "hash": "e9000a52d745feefd99984e2693892b58fc27fab5ba11428fb539f580bd96331",
+     "indice": "Octet du masque à 255 → on recopie ; à 0 → on écrit 0 ; sinon → AND en binaire sur cet octet."
+    },
+    {
+     "id": "B2",
+     "type": "ip",
+     "label": "Réseau B (192.168.10.100/26) : premier hôte",
+     "hash": "41c9b5076aaa60252522b5e87787d2290449ae863bb7e05d7bd28629a14bcec3",
+     "indice": "Premier hôte = adresse réseau + 1."
+    },
+    {
+     "id": "B3",
+     "type": "ip",
+     "label": "Réseau B (192.168.10.100/26) : broadcast",
+     "hash": "559f4d443be4f2c9d7ec83bf8840b5c2e2a213238f9d01f2f5e9da9929884db1",
+     "indice": "Broadcast = tous les bits hôtes à 1. C'est l'adresse juste avant le réseau suivant."
+    },
+    {
+     "id": "B4",
+     "type": "ip",
+     "label": "Réseau B (192.168.10.100/26) : dernier hôte",
+     "hash": "87cdaa519484fe025d6a2a1ee52a03af2298e071f47c75f88c7f0eab45cd97c9",
+     "indice": "Dernier hôte = broadcast − 1."
+    },
+    {
+     "id": "B5",
+     "type": "int",
+     "label": "Réseau B (192.168.10.100/26) : nombre d'hôtes utilisables",
+     "hash": "a95b0da46c1a3d938768804b9e5e228c6dd30c7df830527175eaa40dc4e48359",
+     "indice": "2^(32 − CIDR) − 2."
+    },
+    {
+     "id": "C1",
+     "type": "ip",
+     "label": "Réseau C (172.16.37.10/20) : adresse réseau",
+     "hash": "cccdb4c2807e95da3747c0f7a3807c3d294935ec6af58679cd232819475de076",
+     "indice": "Octet du masque à 255 → on recopie ; à 0 → on écrit 0 ; sinon → AND en binaire sur cet octet."
+    },
+    {
+     "id": "C2",
+     "type": "ip",
+     "label": "Réseau C (172.16.37.10/20) : premier hôte",
+     "hash": "ab586d431f59342d7152b011b3689c0e034b84448f9e50f2da916db3d5cf4156",
+     "indice": "Premier hôte = adresse réseau + 1."
+    },
+    {
+     "id": "C3",
+     "type": "ip",
+     "label": "Réseau C (172.16.37.10/20) : broadcast",
+     "hash": "4a15dbe1d0a892c39852d5e2ec5bc6eacaff60e654a0dbc485b4dfbdf6c99384",
+     "indice": "Broadcast = tous les bits hôtes à 1. C'est l'adresse juste avant le réseau suivant."
+    },
+    {
+     "id": "C4",
+     "type": "ip",
+     "label": "Réseau C (172.16.37.10/20) : dernier hôte",
+     "hash": "ac7ae7d013ec7bee29d341349e04cfc26ddf90f04ad8c039bee965d51e9c1bd8",
+     "indice": "Dernier hôte = broadcast − 1."
+    },
+    {
+     "id": "C5",
+     "type": "int",
+     "label": "Réseau C (172.16.37.10/20) : nombre d'hôtes utilisables",
+     "hash": "6a5eb4e933c42adacc1dcfddde629be87c74e2a2faa776acebfd41b969021ca5",
+     "indice": "2^(32 − CIDR) − 2."
+    }
+   ]
+  }
+ }
+}

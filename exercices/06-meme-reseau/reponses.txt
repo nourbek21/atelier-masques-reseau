@@ -1,0 +1,24 @@
+# Exercice 6 — Même réseau ? Direct ou passerelle ?
+# Écris chaque réponse après le signe =, puis enregistre (Ctrl+S)
+# et lance dans le terminal :  python3 verifier.py 6
+
+# 192.168.1.10 et 192.168.1.250 en /24
+Q1 = 
+
+# 192.168.1.10 et 192.168.2.10 en /24
+Q2 = 
+
+# 192.168.1.10 et 192.168.2.10 en /16
+Q3 = 
+
+# 192.168.50.10 et 192.168.60.20 en /20
+Q4 = 
+
+# 192.168.50.10 et 192.168.70.1 en /20
+Q5 = 
+
+# 10.0.5.20/22 envoie à 10.0.7.200 (direct/passerelle)
+Q6 = 
+
+# 10.0.5.20/22 envoie à 10.0.8.1 (direct/passerelle)
+Q7 = 

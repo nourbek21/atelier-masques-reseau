@@ -1,0 +1,48 @@
+# Exercice 8 — Défi : la carte d'identité d'un réseau
+# Écris chaque réponse après le signe =, puis enregistre (Ctrl+S)
+# et lance dans le terminal :  python3 verifier.py 8
+
+# Réseau A (192.168.1.75/24) : adresse réseau
+A1 = 
+
+# Réseau A (192.168.1.75/24) : premier hôte
+A2 = 
+
+# Réseau A (192.168.1.75/24) : broadcast
+A3 = 
+
+# Réseau A (192.168.1.75/24) : dernier hôte
+A4 = 
+
+# Réseau A (192.168.1.75/24) : nombre d'hôtes utilisables
+A5 = 
+
+# Réseau B (192.168.10.100/26) : adresse réseau
+B1 = 
+
+# Réseau B (192.168.10.100/26) : premier hôte
+B2 = 
+
+# Réseau B (192.168.10.100/26) : broadcast
+B3 = 
+
+# Réseau B (192.168.10.100/26) : dernier hôte
+B4 = 
+
+# Réseau B (192.168.10.100/26) : nombre d'hôtes utilisables
+B5 = 
+
+# Réseau C (172.16.37.10/20) : adresse réseau
+C1 = 
+
+# Réseau C (172.16.37.10/20) : premier hôte
+C2 = 
+
+# Réseau C (172.16.37.10/20) : broadcast
+C3 = 
+
+# Réseau C (172.16.37.10/20) : dernier hôte
+C4 = 
+
+# Réseau C (172.16.37.10/20) : nombre d'hôtes utilisables
+C5 = 

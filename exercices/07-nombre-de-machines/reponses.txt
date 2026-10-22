@@ -1,0 +1,27 @@
+# Exercice 7 — Combien de machines ?
+# Écris chaque réponse après le signe =, puis enregistre (Ctrl+S)
+# et lance dans le terminal :  python3 verifier.py 7
+
+# Nombre d'adresses dans un /24
+Q1 = 
+
+# Nombre d'hôtes utilisables dans un /24
+Q2 = 
+
+# Nombre d'hôtes utilisables dans un /22
+Q3 = 
+
+# Nombre d'hôtes utilisables dans un /26
+Q4 = 
+
+# Nombre d'hôtes utilisables dans un /30
+Q5 = 
+
+# Plus petit réseau pour 300 machines (CIDR)
+Q6 = 
+
+# Plus petit réseau pour 50 machines (CIDR)
+Q7 = 
+
+# Plus petit réseau pour 1000 machines (CIDR)
+Q8 = 
